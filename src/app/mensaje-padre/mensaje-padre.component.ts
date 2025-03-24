@@ -9,4 +9,10 @@ import { Input } from '@angular/core';
 })
 export class MensajePadreComponent {
 @Input() childMessage: string | undefined;
+  mensajeHijo:string;
+  constructor() { 
+    this.mensajeHijo = "Hola Padre";
+  }
+
+
 }
