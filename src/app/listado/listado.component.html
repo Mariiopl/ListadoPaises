@@ -1,0 +1,5 @@
+<p>{{paisActual}}</p>
+
+<ul>
+    <li *ngFor="let pais of listadoPaises" (click)="pedirInformacion(pais.ccn3)">{{pais.translations.spa.common}}</li>
+</ul>
