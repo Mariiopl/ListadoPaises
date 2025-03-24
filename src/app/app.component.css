@@ -25,7 +25,15 @@ app-bandera{
     position: absolute;
     top: 705px;
     width: 400px;
-    height: 200px;
+    height: 220px;
     left: 200px;
     background-color: rgb(204, 174, 0);
+}
+app-mensaje-padre{
+    position: absolute;
+    top: 705px;
+    width: 400px;
+    height: 220px;
+    left: 600px;
+    background-color: rgb(7, 239, 81);
 }
