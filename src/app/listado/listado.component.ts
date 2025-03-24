@@ -31,7 +31,7 @@ export class ListadoComponent {
   pedirInformacion(codigo:string):void{
     let aux = this;
     this.paises.traerPais(codigo).subscribe(function(datos){
-      aux.manejar.setPaisActual(datos);
+      aux.manejar.setPaisActual(datos[0]);
     });
   }
 }

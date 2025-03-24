@@ -2,10 +2,11 @@ import { Component } from '@angular/core';
 import { RouterOutlet } from '@angular/router';
 import { ListadoComponent } from './listado/listado.component';
 import { DetalleComponent } from "./detalle/detalle.component";
+import { BanderaComponent } from "./bandera/bandera.component";
 
 @Component({
   selector: 'app-root',
-  imports: [RouterOutlet, DetalleComponent, ListadoComponent],
+  imports: [RouterOutlet, DetalleComponent, ListadoComponent, BanderaComponent],
   templateUrl: './app.component.html',
   styleUrl: './app.component.css'
 })

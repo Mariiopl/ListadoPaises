@@ -9,29 +9,31 @@ import { CommonModule } from '@angular/common';
   templateUrl: './detalle.component.html',
   styleUrl: './detalle.component.css'
 })
-export class DetalleComponent {
+export class DetalleComponent implements OnInit {
 pais:any;
+cargado:boolean;
   constructor(private manejar:ManejarService) {
     this.pais = {
-      nombre: "",
-      poblacion: ""
     };
+    this.cargado=false;
   }
 
   ngOnInit() {
     let aux=this;
     this.manejar.object$.subscribe(function(datos){
-      aux.pais = datos;     
+    if (datos){
+      aux.pais=datos;
+      aux.cargado=true;
+    }  
+
     });
   }
-
-
   mostrarPaisActual(){
     alert(this.pais);
   }
 
   paisNoVacio():boolean{
-    return this.pais.nombre == "";
+    return this.cargado;
   }
 
 }

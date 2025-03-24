@@ -21,3 +21,11 @@ app-detalle{
     overflow-y: scroll;
     background-color: rgb(49, 49, 196);
 }
+app-bandera{
+    position: absolute;
+    top: 705px;
+    width: 400px;
+    height: 200px;
+    left: 200px;
+    background-color: rgb(204, 174, 0);
+}
